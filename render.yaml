@@ -3,4 +3,10 @@ services:
     name: sms-spam-detector
     env: docker
     plan: free
+    region: oregon   # you can pick another region if you want
+    dockerfilePath: ./Dockerfile
     autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 8501
