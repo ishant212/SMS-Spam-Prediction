@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: sms-spam-detector
+    env: docker
+    plan: free
+    autoDeploy: true
